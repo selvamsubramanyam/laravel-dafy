@@ -1,0 +1,5 @@
+INSERT INTO `statuses` (`id`, `name`, `slug`, `description`, `postion`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'Order Confirmed', 'order_confirmed', 'For Buy anything and deliver anything', NULL, '1', '2021-02-19 11:38:54', NULL, NULL);
+
+INSERT INTO `statuses` (`id`, `name`, `slug`, `description`, `postion`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'Item not available', 'item_not_available', 'For Buy anything and deliver anything', NULL, '1', '2021-02-19 11:38:54', NULL, NULL);
+
+INSERT INTO `notification_categories` (`id`, `title`, `slug`, `description`, `for`, `created_at`, `updated_at`) VALUES (NULL, 'Buy Anything', 'buy_anything', 'For placing Buy Anything order', NULL, '2021-02-19 12:00:06', NULL), (NULL, 'Deliver Anything', 'deliver_anything', 'For placing Deliver Anything order', NULL, '2021-02-19 12:00:06', NULL);

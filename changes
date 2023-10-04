@@ -1,0 +1,63 @@
+Notification Category
+
+INSERT INTO `notification_categories` (`id`, `title`, `slug`, `description`, `image`, `for`, `created_at`, `updated_at`) VALUES (NULL, 'Seller Enquiry Notification', 'seller_enquiry_notification', NULL, NULL, '1', NULL, NULL)
+
+UPDATE `order` SET `notify`=0 WHERE `is_active`=1
+
+UPDATE `buy_anything` SET `notify`=0 WHERE `deleted_at` IS NULL
+
+UPDATE `deliver_anything` SET `notify`=0 WHERE `deleted_at` IS NULL
+
+
+//For Delivery charge
+
+-> AdminController.php
+-> otherSetting.blade.php
+-> BusinessApi Controller
+-> CustomerApiController
+-> settings.php
+-> invoice.blade.php
+-> orderView.blade.php
+
+// For notification
+
+-> Notification.php - Modules/Admin/Entities
+-> notificatio.blade.php  - Modules/Admin/Resources/views
+-> dev.js - public/admin/js
+-> CustomerApiController.php = Modules/Api/Http/Controllers
+-> AdminController.php - Modules/admin/http/Controllers
+-> addNotification.blade.php - Modules/Admin/Resources/views
+-> BusinessApiController.php
+
+// For delete category
+-> web.php  - Modules/Admin/Routes
+-> Product.php - Modules/Products/Entities
+-> dev.js - public/admin/js
+-> CustomerApiController.php - Modules/Api/Http/Controllers/
+-> BusinessCategoryShop - Modules/Shop/Entities/
+-> BusinessCategory.php - Modules/Category/Entities/
+-> BusinessApiController.php - Modules/Api/Http/Controllers
+-> AdminController.php - Modules/Admin/Http/Controllers
+-> BusinessSellerCategory.php - Modules/Users/Entities
+-> UserController.php - Modules/Admin/Http/Controllers
+-> DeliveryAppController.php - Modules/DeliveryApp/Http/Controllers
+-> OrderView.blade.php - Modules/Admin/Resources/views/Order/orderView
+-> ProductAttribute.php - Modules/Product/Entities 
+-> BusinessCategoryField.php - Modules/Category/Entities 
+-> VendorApiController.php - Modules/VendorApi/Http/Controllers  
+
+//Pending Updations - changes on 22/06/2021
+-> ShopController.php -   Modules/Admin/Http/Controllers
+-> VendorApiController.php - Modules/VendorApi/Http/Controllers
+-> addAttribute.blade.php - Modules/Admin/Resources/views/Category
+-> editAttribute.blade.php - Modules/Admin/Resources/views/Category
+-> CustomerApiController.php - Modules/Api/Http/Controllers
+-> AdminController - Modules/Admin/Http/Controllers
+-> dashboard.blade.php - Modules/Admin/Resources/views
+-> addProduct.blade.php - Modules/Admin/Resources/views/Product
+-> ProductController - Modules/Admin/Http/Controllers
+
+//For order date filter for export
+-> web.php - Modules/Admin/Routes
+-> OrderController.php - Modules/Admin/Http/Controllers
+-> order.blade.php - Modules/Admin/Resources/views/order

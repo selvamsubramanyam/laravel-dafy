@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Dafy';
+  src:  url('../fonts/Dafy.eot?h5yq65');
+  src:  url('../fonts/Dafy.eot?h5yq65#iefix') format('embedded-opentype'),
+    url('../fonts/Dafy.ttf?h5yq65') format('truetype'),
+    url('../fonts/Dafy.woff?h5yq65') format('woff'),
+    url('../fonts/Dafy.svg?h5yq65#Dafy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="Dafy-"], [class*=" Dafy-"] {
+  /* use !important to prevent issues with browser extensions that change ../fonts */
+  font-family: 'Dafy' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Dafy-networking:before {
+  content: "\e900";
+}
+.Dafy-devices:before {
+  content: "\e901";
+}
+.Dafy-gear:before {
+  content: "\e902";
+}
+.Dafy-user:before {
+  content: "\e903";
+}
+.Dafy-shield:before {
+  content: "\e904";
+}
+.Dafy-writing:before {
+  content: "\e905";
+}
+.Dafy-human-resources:before {
+  content: "\e906";
+}
+.Dafy-linked:before {
+  content: "\e907";
+}
+.Dafy-lamp:before {
+  content: "\e908";
+}

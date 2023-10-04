@@ -1,0 +1,14 @@
+{
+    "name": "DeliveryApp",
+    "alias": "deliveryapp",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\DeliveryApp\\Providers\\DeliveryAppServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
